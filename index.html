@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jest Test</title>
-    <script src="./math.js"></script>
+    <title>BattleShip Game</title>
+    <script src="/src/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="/src/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
+    <div class="msg">
+        Place your ships and let battle commence! 
+    </div>
+    <div class="left">
+        <div class="ship-container-left">
+            <div class="ship" data-value="5" draggable="true">Carrier</div>
+            <div class="ship" data-value="4" draggable="true">Battleship</div>
+            <div class="ship" data-value="3" draggable="true">Destroyer</div>
+            <div class="ship" data-value="2" draggable="true">Submarine</div>
+            <div class="ship" data-value="1" draggable="true">Patrol boat </div>
+            <p class="uparrow-left"><i class='bx bxs-up-arrow'></i></p>
+        </div>
+        <div class="grid-container-left">
+            
+            
+        </div>
+    </div>
+    <div class="right">
+        <div class="grid-container-right">
+            
+            
+        </div>        
+        <div class="ship-container-right">
+            <div class="ship" data-value="5" draggable="true">Carrier</div>
+            <div class="ship" data-value="4" draggable="true">Battleship</div>
+            <div class="ship" data-value="3" draggable="true">Destroyer</div>
+            <div class="ship" data-value="2" draggable="true">Submarine</div>
+            <div class="ship" data-value="1" draggable="true">Patrol boat </div>
+            <p class="uparrow-right" ><i class='bx bxs-up-arrow'></i></p>
+        </div>     
+    </div>
+    <button class="play">Play</button>
+    <button class="reset">Restart</button>
 </body>
 </html>
